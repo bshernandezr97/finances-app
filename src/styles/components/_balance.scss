@@ -1,0 +1,138 @@
+.balance__container {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 100%;
+    max-height: 100vh;
+    padding: 1rem;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.balance__table_div {
+    max-height: 60vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 0%;
+    }
+}
+
+.balance__table {
+    border: 0px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    font-size: 9pt;
+
+    & th {
+        background-color: rgba(243, 16, 84, 0.87);
+        border: 0px solid gray;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+    }
+    & td {
+        background-color: white;
+        border: 0px solid gray;
+        border-bottom: 2px solid rgb(87, 87, 87);
+        color: black;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.balance__modal {
+    text-align: center;
+}
+
+.balance__close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.balance__modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.balance__modal input {
+    background-color: rgb(240, 238, 238);
+    color: black;
+    padding: .7rem;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 155, 155);
+    width: 70vw;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.balance__modal textarea {
+    background-color: rgb(240, 238, 238);
+    color: black;
+    padding: .7rem;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 155, 155);
+    width: 70vw;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 5px;    
+}
+
+.balance__modal select{
+    background-color: rgb(240, 238, 238);
+    color: black;
+    padding: .7rem;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 155, 155);
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 5px;
+    text-align-last:center    
+}
+
+.balance__green_col {
+    color: green !important;
+}
+
+.balance__red_col {
+    color: red !important;
+}
+
+.balance__indicator-flexgroup {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.balance__indicator_ingress {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.balance__indicator_egress {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.balance__indicator_balance {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.balance__actions-icons {
+    font-size: 30px;
+    cursor: pointer;
+}

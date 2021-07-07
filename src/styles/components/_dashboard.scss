@@ -1,0 +1,78 @@
+.dashboard__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("../../assets/eifel.jpeg");
+  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dashboard__navbar_button {
+  display: none;
+}
+
+.dashboard__navbar {
+  background: linear-gradient(
+    30deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(58, 5, 30) 35%,
+    rgba(243, 16, 84, 0.87) 100%
+  );
+  flex: 0.5;    
+}
+
+.dashboard__content {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.452);
+  display: flex;
+  flex: 3;
+  justify-content: center; 
+}
+
+@media only screen and (max-width: 600px) {
+
+  .dashboard__navbar {
+    background: linear-gradient(
+      30deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgb(58, 5, 30) 35%,
+      rgba(243, 16, 84, 0.87) 100%
+    );
+    flex: 1;
+    transition: flex ease 0.5s;    
+  }
+
+  .dashboard__navbar_button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    border: 0px solid gray;
+    top: 5%;
+    left: 5%;
+  }
+  
+
+  .dashboard__navbar_hidden {
+    background: linear-gradient(
+      30deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgb(58, 5, 30) 35%,
+      rgba(243, 16, 84, 0.87) 100%
+    );
+    display: none;
+    transition: flex ease 0.5s;    
+  }
+  .dashboard__content {
+    flex: 1 !important;
+  }
+  .dashboard__content_hidden {
+    display: none !important;
+  }
+}
+
+

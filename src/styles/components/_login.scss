@@ -1,0 +1,46 @@
+.login__container {
+  background-image: url("../../assets/cash.gif");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__form_div {
+  background-color: $darktransparency;
+  border-radius: 2rem;
+  color: white;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  width: 20rem;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__form input {
+  background-color: $grayinput;
+  border: 0px solid gray;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.login__form_link {
+  color: $success;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: color ease 0.5s;
+  &:hover {
+    color: lighten($color: $success, $amount: 40);
+    text-decoration: underline;
+  }
+}

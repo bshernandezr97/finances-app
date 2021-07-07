@@ -1,0 +1,57 @@
+
+html, body {
+    font-family: Helvetica, sans-serif;
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    margin: 0px;
+}
+
+.btn {
+    border: 0px solid gray;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.btn-danger {
+    background-color: $danger;
+}
+
+.btn-primary {
+    background-color: $primary;
+    transition: background-color ease .5s;
+    &:hover {
+        background-color: darken($color: $primary, $amount: 20);
+    }
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 20px;
+}
+
+.screen-title {
+    font-size: large;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+
+
